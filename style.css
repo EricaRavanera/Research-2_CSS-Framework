@@ -1,0 +1,159 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: black;
+}
+.section-padding{
+    padding: 100px 0;
+}
+.carousel-item{
+    height: 100vh;
+    min-width: 300px;
+}
+.carousel-caption{
+    bottom: 200px;
+    z-index: 2;
+}
+.carousel-caption h1{
+    font-size: 4.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 25px;
+    font-weight: 700;
+    color:red;
+}
+.carousel-caption p{
+    width: 60%;
+    margin: auto;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.9;
+
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+.navbar-nav a{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.navbar-nav a:hover{
+    color: #ff0000;
+}
+.navbar-light .navbar-brand{
+    color: black;
+    font-size: 22px;
+    text-transform: none;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+.navbar-light .navbar-brand:focus,
+.navbar-light .navbar-brand:hover{
+    color: rgb(165, 42, 42);
+}
+.navbar-light .navbar-nav .navbar-link{
+    color: #B90E0A;
+}
+.w-100{
+    height: 100vh;
+}
+
+/* Apply styles to the image container */
+.about-img {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px; /* Adjust the spacing by changing the value */
+}
+
+/* Style the image */
+.about-img img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    border-radius: 8%;
+    border: 2px solid red;
+}
+
+/* Add a cool hover effect */
+.about-img:hover img {
+    transform: scale(1.1);
+    border-radius: 8%;
+}
+
+/* Style the description text */
+.about-img p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: red;
+    margin: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+/*genres*/
+
+/*platform*/
+.platform-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .platform-link {
+    width: 100px;
+    height: auto; 
+    margin-top: 3rem; 
+    margin-bottom: 10rem;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+  .platform-link:hover {
+    transform: scale(1.1); /* Adjust the scale factor for the hover effect */
+  }
+  
+
+/* responsive*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .carousel-caption{
+        bottom: 220px;
+    }
+    .carousel-caption p{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .navbar-nav{
+        text-align: center;
+    }
+    .carousel-caption{
+        bottom: 200px;
+        padding: 10px;
+        text-align: center;
+    }
+    .carousel-caption h1{
+        font-size: 40px;
+    }
+    /* .carousel-caption a{
+        padding: 10px 15px;
+    } */
+    .carousel-caption p{
+        width: 100%;
+        line-height: 1.6;
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
